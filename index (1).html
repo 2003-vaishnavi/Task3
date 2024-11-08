@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chocolate Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Chocolate Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="#order">Order Chocolate</a></li>
+                <li><a href="#quiz">Take a Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carousel">
+        <h2>Chocolate Carousel</h2>
+        <div id="carousel-container">
+            <img id="carousel-image" src="" alt="Chocolate Image">
+            <div class="carousel-buttons">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="order">
+            <h2>Order Your Favorite Chocolates</h2>
+            <div id="chocolate-list" class="chocolate-container"></div>
+            <form id="order-form">
+                <label for="chocolate">Choose Chocolate:</label>
+                <select id="chocolate" required></select>
+                <button type="submit">Order Now</button>
+            </form>
+        </section>
+
+        <section id="quiz">
+            <h2>Chocolate Quiz</h2>
+            <div id="quiz-container"></div>
+            <button id="submit-quiz">Submit Quiz</button>
+            <div id="quiz-result"></div>
+        </section>
+        <section id="jokes">
+            <h2>Chocolate Joke of the Day</h2>
+            <div id="joke-container">
+                <p id="joke">Loading joke...</p>
+                <button id="new-joke">Get Another Joke</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Delights. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

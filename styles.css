@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4a3d35;
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d1a54d;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #4a3d35;
+    border-bottom: 2px solid #d1a54d;
+    padding-bottom: 10px;
+}
+
+.chocolate-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chocolate-container img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* This ensures the image covers the dimensions without distortion */
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+
+.chocolate-container img:hover {
+    transform: scale(1.05);
+}
+
+.chocolate-container div {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #d1a54d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b38b3e;
+}
+
+#carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4a3d35;
+    color: white;
+}
+#jokes {
+    text-align: center;
+}
+
+#joke-container {
+    margin-top: 20px;
+}
+
+#new-joke {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    #carousel-image {
+        width: 100%;
+    }
+}
